@@ -1,0 +1,28 @@
+.purpose {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 75px 0;
+    }
+    &__image {
+        width: 50%;
+        background-color: var(--color-gray-300);
+    }
+    &__info {
+        width: calc(50% - 136px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 58px 0;
+    }
+    .descr {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

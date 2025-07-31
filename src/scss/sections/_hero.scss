@@ -1,0 +1,27 @@
+.hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--color-gray-300);
+    &__wrapper {
+        margin-top: 60px;
+    }
+    &__image {
+        height: 630px;
+        width: 50%;
+        background-color: var(--color-white);
+    }
+    &__info {
+        width: calc(50% - 150px);
+    }
+    .descr {
+        margin-top: 15px;
+    }
+    &__cta {
+        display: flex;
+        gap: 10px;
+        margin-top: 50px;
+        a {
+            flex: 1;
+        }
+    }
+}
