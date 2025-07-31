@@ -1,0 +1,32 @@
+.events {
+    padding: 95px 0;
+    background-color: var(--color-gray-300);
+    &__wrapper {
+        display: flex;
+        margin-top: 50px;
+        gap: 20px;
+    }
+    &__card {
+        width: calc(25% - 15px);
+        &-img {
+            width: 100%;
+            height: 200px;
+            background-color: var(--color-white);
+        }
+        &-date {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-gray-400);
+        }
+        .divider {
+            margin-top: 15px;
+        }
+        .h4 {
+            margin-top: 25px;
+        }
+        &-descr {
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,8 +1,18 @@
 @use 'header';
 @use 'hero';
+/* === home=== */
 @use 'home/purpose';
 @use 'home/phylosophy';
 @use 'home/banner';
+
+/* === phylosophy === */
 @use 'phylosophy/cycle';
 @use 'phylosophy/principles';
+
+/* === coffeeshop === */
 @use 'coffeeshop/brand';
+@use 'coffeeshop/menu';
+@use 'coffeeshop/slider';
+
+/* === exhibition === */
+@use 'exhibition/events';

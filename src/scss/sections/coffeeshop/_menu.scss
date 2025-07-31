@@ -1,0 +1,24 @@
+.menu {
+    padding: 95px 0;
+    background-color: var(--color-gray-300);
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+        margin-top: 50px;
+    }
+    &__card {
+        width: calc(25% - 15px);
+        &-img {
+            width: 100%;
+            height: 265px;
+            background-color: var(--color-white);
+        }
+        &-title {
+            margin-top: 25px;
+            font-weight: bold;
+        }
+        &-descr {
+            margin-top: 15px;
+        }
+    }
+}

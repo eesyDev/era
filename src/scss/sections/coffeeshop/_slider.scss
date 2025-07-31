@@ -1,0 +1,17 @@
+.coffee-slider {
+    padding: 75px 0;
+    background-color: var(--color-gray-300);
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+    }
+    &__card {
+        width: calc(25% - 15px);
+        &-img {
+            width: 100%;
+            height: 350px;
+            background-color: var(--color-white);
+            display: flex;
+        }
+    }
+}
