@@ -7,7 +7,6 @@
     }
     &__wrapper {
         display: flex;
-        gap: 20px;
         margin-top: 50px;
     }
     &__card {
@@ -16,6 +15,7 @@
             width: 100%;
             height: 265px;
             background-color: var(--color-white);
+            border-radius: 35px 35px 0 0;
         }
         &-title {
             margin-top: 25px;

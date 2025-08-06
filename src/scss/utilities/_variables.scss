@@ -133,21 +133,30 @@ h4, .h4 {
 .color--shaded {
     color: rgba(0, 0, 0, 0.5);
 }
+.color--black {
+    color: var(--color-black);
+}
 
 .font-bold {
     font-weight: 700;
 }
 
 .right-oriented {
-    padding: 75px 0;
+    padding: 50px 0;
     &__wrapper {
         margin-top: 35px;
     }
     &__descr {
         width: 51%;
+        p:nth-child(1) {
+            margin-bottom: 25px;
+        }
     }
     .h2 {
         width: 34%;
+    }
+    .h3 {
+        width: 40%;
     }
     ul.gap-25 {
         display: flex;
@@ -173,11 +182,18 @@ h4, .h4 {
         .h2 {
             width: 38%;
         }
+        .h3 {
+            width: 45%;
+        }
+    }
+    .descr-subtitle {
+        font-size: 18px;
+        margin-bottom: 25px;
     }
 }
 
 .left-oriented {
-    padding: 75px 0;
+    padding: 50px 0;
     &__wrapper {
         margin-top: 35px;
     }
@@ -186,6 +202,9 @@ h4, .h4 {
     }
     .h2 {
         width: 34%;
+    }
+    .h3 {
+        width: 40%;
     }
     &.larger-title {
         .h2 {
