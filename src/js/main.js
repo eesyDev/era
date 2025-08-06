@@ -23,4 +23,28 @@ jQuery(document).ready(function ($) {
         window.menu_slider = false;
         
     }
+    try {
+        window.events_slider = new Swiper('.events__slider', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1199: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+                620: {
+                    slidesPerView: 2,
+                }
+            }
+        })
+    } catch (err) {
+        window.events_slider = false;
+        
+    }
 })
