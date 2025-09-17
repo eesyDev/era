@@ -48,6 +48,27 @@ jQuery(document).ready(function ($) {
         
     }
 
+    try {
+        window.events_slider = new Swiper('.coffee-slider__slider', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                1199: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+                620: {
+                    slidesPerView: 2,
+                }
+            }
+        })
+    } catch (err) {
+        window.events_slider = false;
+        
+    }
+
     var burger = $('.burger');
       var  slideMenu = $('.header__nav-outer');
 

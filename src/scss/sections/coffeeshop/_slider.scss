@@ -3,7 +3,7 @@
     background-color: var(--color-gray-300);
     &__wrapper {
         display: flex;
-        gap: 20px;
+        // gap: 20px;
     }
     &__card {
         width: calc(25% - 15px);
@@ -16,3 +16,15 @@
         }
     }
 }
+
+// @media screen and (max-width: 1199.99px) {
+//     .coffee-slider__card-img {
+//         height: 300px;
+//     }
+// }
+
+// @media screen and (max-width: 1024.99px) {
+//     .coffee-slider__card-img {
+//         height: 200px;
+//     }
+// }
