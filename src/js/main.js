@@ -76,4 +76,29 @@ jQuery(document).ready(function ($) {
         burger.toggleClass('open');
         slideMenu.toggleClass('active');
     });
+
+    $(window).scroll(function() {
+        var wScroll = $(this).scrollTop();
+
+        if (wScroll > 20) {
+            $('.header').addClass('active');
+            $('.slide-menu').addClass('scrolled');
+        }
+        else {
+            $('.header').removeClass('active');
+            $('.slide-menu').removeClass('scrolled');
+        }
+    });
+    
+    // Плавная прокрутка для всех якорных ссылок
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        
+        var target = $(this.hash);
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 800); // 800ms = скорость анимации
+        }
+    });
 })
