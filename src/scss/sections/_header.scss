@@ -46,6 +46,7 @@
 }
 .burger {
     width: 20px;
+    height: 16px;
     position: relative;
 }
 .burger .bottom-line,
@@ -60,22 +61,22 @@
 }
 
 .burger .top-line {
-    top: 20px;
+    top: 0px;
     transition: all .2s ease-in-out
 }
 
 .burger .middle-line {
-    top: 28px;
+    top: 8px;
     transition: all .2s ease-in-out
 }
 
 .burger .bottom-line {
-    top: 36px;
+    top: 16px;
     transition: all .2s ease-in-out
 }
 
 .open .top-line {
-    transform: translate3d(0, 5px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0deg, 0deg);
+    transform: translate3d(0, 6px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     transition: all .3s ease-in-out
 }
@@ -86,7 +87,7 @@
 
 .open .bottom-line {
     transition: all .3s ease-in-out;
-    transform: translate3d(0, -10.5px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-45deg) skew(0deg, 0deg);
+    transform: translate3d(0, -10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-45deg) skew(0deg, 0deg);
     transform-style: preserve-3d
 }
 .burger {
@@ -100,6 +101,7 @@
     .header__nav li {
         padding: 10px;
     }
+    
 }
 @media screen and (max-width: 1024.99px) {
     .header {
@@ -113,9 +115,13 @@
         width: fit-content;
         padding: 30px;
         height: 100vh;
-        top: 69px;
+        top: 65px;
         right: -100%;
+        box-shadow: -2px 5px 10px rgba(0,0,0,.1);
         transition: all .4s cubic-bezier(.8, .1, .01, .04);
+        background-color: #fff;
+        min-width: 320px;
+        z-index: 9;
         &.active {
             right: 0;
         }
@@ -125,5 +131,34 @@
     }
     .burger {
         display: block;
+    }
+    .header__wrapper {
+        justify-content: space-between;
+        gap: unset;
+    }
+    .header__inner {
+        flex: initial;
+        gap: 16px;
+        align-items: center;
+    }
+    .link--primary {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (max-width: 600.99px) {
+    .header__logo {
+        font-size: 16px;
+    }
+    .link--primary {
+        width: 28px;
+        height: 28px;
+    }
+    .header__actions {
+        gap: 8px;
+    }
+    .header__logo {
+        padding: 10px 14px;
     }
 }

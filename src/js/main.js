@@ -47,4 +47,12 @@ jQuery(document).ready(function ($) {
         window.events_slider = false;
         
     }
+
+    var burger = $('.burger');
+      var  slideMenu = $('.header__nav-outer');
+
+    burger.click(function() {
+        burger.toggleClass('open');
+        slideMenu.toggleClass('active');
+    });
 })

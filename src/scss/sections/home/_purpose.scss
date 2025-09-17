@@ -49,3 +49,39 @@
         }
     }
 }
+
+@media screen and (max-width: 1199.99px) {
+    .purpose__row {
+        padding: 0;
+    }
+    .purpose__image {
+        width: 46%;
+    }
+    .purpose__info {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 1024.99px) {
+    .purpose__row {
+        flex-wrap: wrap;
+    }
+    .purpose__image {
+        width: 100%;
+    }
+    .purpose__info {
+        width: 100%;
+        text-align: center;
+    }
+    .purpose .descr {
+        margin-top: 35px;
+    }
+
+    .purpose {
+        margin-top: 50px;
+        ul.descr-item, .descr-item.text-left {
+            text-align: left;
+        }
+    }
+    
+}
